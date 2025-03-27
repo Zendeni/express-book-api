@@ -45,22 +45,17 @@ SENTRY_DSN=your-sentry-dsn
 
 ## 📬 API Endpoints
 ## 🔐 Auth
-POST /login — returns a JWT token
+- **POST `/login`** – Returns a JWT token for authentication
 
 ## 📚 Books
-GET /books — get all books
-
-POST /books — create a new book (requires token)
-
-PUT /books/:id — update a book (requires token)
-
-DELETE /books/:id — delete a book (requires token)
+- **GET `/books`** – Get all books
+- **POST `/books`** – Create a new book (**requires JWT token**)
+- **PUT `/books/:id`** – Update a book by ID (**requires JWT token**)
+- **DELETE `/books/:id`** – Delete a book by ID (**requires JWT token**)
 
 ## 📝 Records
-GET /records — get all borrow records
-
-POST /records — create new borrow record (optional)
-
+- **GET `/records`** – Get all borrow records
+- **POST `/records`** – Create a new borrow record (authentication optional)
 
 ## 🛡️ Protected Routes
 To access protected routes, include a valid JWT in the Authorization header:
