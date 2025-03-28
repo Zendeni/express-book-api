@@ -18,7 +18,7 @@ import errorHandler from './middleware/errorHandler.js';
 const app = express()
 
 // Sentry.init({
-//     dsn: "https://640f51f44c6adac8044c72da80821e51@o4508043385241600.ingest.de.sentry.io/4508043399135312",
+//     dsn: "---.ingest.de.sentry.io/---",
 //     integrations: [
 //         Http({ tracing: true }),
 //         new Express({ app }),
